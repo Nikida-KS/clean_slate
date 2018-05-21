@@ -112,7 +112,7 @@ header {
   height: 200px;
   position: relative;
   background: rgb(15, 183, 132);
-  opacity: 0.8;
+  background: rgb(15, 183, 132, 0.8);
   color: white;
   font-family: Montserrat, sans-serif;
   font-size: 100px;
@@ -130,7 +130,7 @@ header {
   width: 0;
   height: 0;
   border-left: 80px solid rgb(15, 183, 132);
-  opacity: 0.8;
+  border-left: 80px solid rgb(15, 183, 132, 0.8);
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
 }
@@ -138,7 +138,7 @@ header {
 #tagline {
   width: 60%;
   background-color: rgb(255, 92, 92);
-  opacity: 0.8;
+  background-color: rgb(255, 92, 92, 0.8);
   color: white;
   font-family: Raleway, serif;
   font-size: 30px;
@@ -225,7 +225,8 @@ li:after, .framework:after {
 }
 
 .panel summary:hover {
-  background: rgb(15, 183, 132);
+  background-color: rgb(15, 183, 132);
+  background: rgb(15, 183, 132, 0.8);
   color: white;
 }
 
