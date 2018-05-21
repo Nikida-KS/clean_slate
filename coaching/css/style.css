@@ -92,3 +92,117 @@ nav a:hover {
 
 
 }
+
+.fas{
+  color: #55668A;
+  font-size: 60px;
+  margin: 15px auto;
+}
+
+.pain{
+  margin: 5px;
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 1px 2px 2px 1px #55668A;
+}
+
+/* .pain:hover{
+  box-shadow: 2px 3px 2px 1px #55668A;
+} */
+
+/*Setup for CSS grid*/
+
+.box1 {
+  grid-area: box1;
+  background: url("../images/hike.jpg") right center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay{
+  color: white;
+  width: 90%;
+  margin: 10%
+}
+
+.box2 {
+  grid-area: box2;
+  background: rgb(15, 183, 132);
+}
+
+.box3 {
+  grid-area: box3;
+  background-color: rgb(255, 92, 92);
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+.box9 {
+  grid-area: box9;
+  background: rgb(15, 183, 132);
+  color: white;
+  border-top: 4px solid white;
+}
+
+.box10 {
+  grid-area: box10;
+}
+
+/* Phones */
+/* this layout will sort all of the articles and sidebars in a single column */
+.grid {
+  text-align: center;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "box1"
+  "box2"
+  "box3"
+  "box4"
+  "box5"
+  "box6"
+  "box7"
+  "box8"
+  "box9"
+  "box10";
+}
+
+/* (Desktops) */
+
+@media (min-width: 576px) {
+
+  .grid {
+    max-width: 1080px;
+    margin: 10px auto;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "box1 box1 box1 box2 box2"
+    "box1 box1 box1 box3 box3"
+    "box9 box9 box9 box9 box9"
+    "box4 box5 box6 box7 box8"
+    "box10 box10 box10 box10 box10";
+  }
+
+}
