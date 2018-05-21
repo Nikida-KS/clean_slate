@@ -111,7 +111,8 @@ header {
   width: 65%;
   height: 200px;
   position: relative;
-  background: rgb(15, 183, 132, 0.8);
+  background: rgb(15, 183, 132);
+  opacity: 0.8;
   color: white;
   font-family: Montserrat, sans-serif;
   font-size: 100px;
@@ -128,14 +129,16 @@ header {
   bottom: 0;
   width: 0;
   height: 0;
-  border-left: 80px solid rgb(15, 183, 132, 0.8);
+  border-left: 80px solid rgb(15, 183, 132);
+  opacity: 0.8;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
 }
 
 #tagline {
   width: 60%;
-  background-color: rgb(255, 92, 92, 0.8);
+  background-color: rgb(255, 92, 92);
+  opacity: 0.8;
   color: white;
   font-family: Raleway, serif;
   font-size: 30px;
@@ -150,6 +153,7 @@ header {
 .container h1{
   text-align: center;
   margin: 20px auto;
+    color:  #55668A;
 }
 
 .container h2{
@@ -221,7 +225,7 @@ li:after, .framework:after {
 }
 
 .panel summary:hover {
-  background: rgb(15, 183, 132, 0.8);
+  background: rgb(15, 183, 132);
   color: white;
 }
 
@@ -232,7 +236,7 @@ li:after, .framework:after {
 .panel[open] summary {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #55668A;
 }
 
 @media (min-width: 576px) {
@@ -253,10 +257,8 @@ li:after, .framework:after {
   }
 }
 
-
-
 .icon {
-  color: gray;
+  color: #55668A;
   width: 50px;
   height: 50px;
   line-height: 50px;
