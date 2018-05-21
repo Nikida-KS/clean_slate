@@ -94,7 +94,7 @@ nav a:hover {
 }
 
 .fas{
-  color: #55668A;
+  color: #005F73;
   font-size: 60px;
   margin: 15px auto;
 }
@@ -129,12 +129,12 @@ nav a:hover {
 
 .box2 {
   grid-area: box2;
-  background: rgb(15, 183, 132);
+  background: #F2D054;
 }
 
 .box3 {
   grid-area: box3;
-  background-color: rgb(255, 92, 92);
+  background-color: rgb(15, 183, 132);
 }
 
 .box4 {
@@ -159,9 +159,18 @@ nav a:hover {
 
 .box9 {
   grid-area: box9;
-  background: rgb(15, 183, 132);
+  text-align: center;
+  width: 75%;
+  margin: 10px auto;
+  background: #005F73;
   color: white;
-  border-top: 4px solid white;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px gray;
+}
+
+.box9:hover{
+  box-shadow: 3px 4px 2px 1px gray;
+  background-color: rgb(15, 183, 132);
 }
 
 .box10 {
