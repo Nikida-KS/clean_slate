@@ -1,0 +1,94 @@
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 60px;
+  font-weight: bolder;
+  margin: 10px 10px 10px 0;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+}
+
+p{
+  font-family: Raleway, serif;
+}
+
+summary{
+  font-family: Raleway, serif;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav div {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+nav li {
+  list-style: none;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #55668A;
+  font-family: Raleway, sans-serif;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  color: #E8353F;
+}
+
+@media screen and (max-width: 576px) {
+
+  nav{
+    height:auto;
+  }
+  nav ul {
+    flex-flow: column;
+  }
+
+  nav li{
+    line-height: 40px;
+    border-bottom: 1px solid #E8353F;
+  }
+
+  nav .container{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  nav .current{
+    display: none;
+  }
+
+
+}

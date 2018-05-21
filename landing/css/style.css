@@ -161,7 +161,8 @@ header {
   margin: 10px auto;
 }
 
-/* The framework class applied to a list makes it easier to add and style all of the elements */
+/* I thought using a list would be easy, but the flex display flexed the text and
+I couldn't fix it so I used padding and margins to get it done.*/
 
 .framework {
   list-style: none;
@@ -169,7 +170,7 @@ header {
   position: relative;
 }
 
-/* This is the only way I could find to have a vertical line run through a page */
+/* This is for the vertical line */
 
 .framework:before {
   top: 0;
@@ -210,6 +211,8 @@ li:after, .framework:after {
   box-shadow: 1px 2px 8px 0 gray;
 }
 
+/*summary is the "before the fold" bits. Good for SEO*/
+
 .panel summary {
   user-select: none;
   outline: none;
@@ -219,12 +222,13 @@ li:after, .framework:after {
   transition-property: margin, background;
 }
 
-/* This gets rid of those triangle thingies  */
+/* This gets rid of those triangle twistie thingies  */
 .panel summary::-webkit-details-marker {
   display: none;
 }
 
 .panel summary:hover {
+  /* there are two because safari doesn't support rgba and using opacity makes the text opaque too */
   background-color: rgb(15, 183, 132);
   background: rgb(15, 183, 132, 0.8);
   color: white;
@@ -271,6 +275,8 @@ li:after, .framework:after {
   background-color: white;
   font-family: Font Awesome\ 5 Free;
 }
+
+/*The icons can be changed using the <i> property in the html, but since they're all the same*/
 
 .icon:before {
   content: "\f192";
