@@ -8,11 +8,23 @@ h1 {
 h2 {
   font-family: Raleway, sans-serif;
   font-size: 30px;
-  margin: 10px 10px 10px 10px;
+  font-weight: bold;
+  margin: 10px 10px 20px 10px;
 }
 
 p{
   font-family: Raleway, serif;
+  font-size: 18px;
+  margin: 10px 10px 10px 10px;
+}
+
+hr{
+  width: 40%;
+  border: 2px solid white;
+}
+
+strong{
+  font-weight: bold;
 }
 
 summary{
@@ -22,7 +34,7 @@ summary{
 }
 
 nav {
-  height: 40px;
+  height: auto;
   width: 100%;
   background-color: white;
   display: flex;
@@ -124,17 +136,46 @@ nav a:hover {
 .overlay{
   color: white;
   width: 90%;
-  margin: 10%
+  margin: 10%;
 }
 
 .box2 {
   grid-area: box2;
   background: #F2D054;
+  color: white;
+  padding: 5%;
+  border-bottom: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box2 .button{
+  background: rgb(15, 183, 132);
+}
+
+.box3 .button{
+  background: #F2D054;
+}
+
+.button{
+  width: 60%;
+  box-shadow: 1px 2px 2px 1px gray;
+  padding: 5px;
+  margin: 20px;
+  font-weight: bolder;
 }
 
 .box3 {
   grid-area: box3;
   background-color: rgb(15, 183, 132);
+  color: white;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .box4 {
@@ -171,6 +212,11 @@ nav a:hover {
 .box9:hover{
   box-shadow: 3px 4px 2px 1px gray;
   background-color: rgb(15, 183, 132);
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 
 .box10 {
